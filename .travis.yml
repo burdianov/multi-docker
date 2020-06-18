@@ -10,7 +10,7 @@ script:
 
 after_success:
   - docker build -t burdianov/multi-client ./client
-  - docker build -t burdianov/multi-nginx ./enginx
+  - docker build -t burdianov/multi-nginx ./nginx
   - docker build -t burdianov/multi-server ./server
   - docker build -t burdianov/multi-worker ./worker
   # Log in to the docker CLI
